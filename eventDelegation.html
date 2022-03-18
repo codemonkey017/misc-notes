@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --yellow: rgb(221, 199, 0);
+            --green: rgb(0, 202, 51);
+            --red: rgb(212, 81, 58);
+
+        }
+
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: inherit;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(236, 236, 236);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            gap: 2rem;
+            height: 20rem;
+            /* border: 1px solid red; */
+            justify-content: center;
+            background-color: aliceblue;
+            margin-top: auto;
+            position: relative;
+
+        }
+
+        .tabs__info {
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: flex-start;
+            width: 60%;
+            text-align: center;
+
+        }
+
+
+        .tabs__button {
+            display: flex;
+            position: absolute;
+            top: -2rem;
+            /* border: 1px solid red; */
+        }
+
+        .title {
+            /* border: 1px solid red; */
+            display: block;
+            margin-bottom: 1rem;
+
+        }
+
+        .p {
+            line-height: 1.5rem;
+            /* border: 1px solid red; */
+            display: block;
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+
+
+        }
+
+        .margin__left {
+            margin-left: 1rem;
+            border-radius: 15px;
+            border: none;
+            padding: .7rem 1.5rem;
+            color: black;
+            background-color: rgb(0, 163, 163);
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .red {
+            background-color: var(--red);
+        }
+
+        .green {
+            background-color: var(--green);
+        }
+
+        .yellow {
+            background-color: var(--yellow);
+        }
+
+        .active {
+            transform: translateY(-20%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs__info">
+            <div class="tabs__info--left">
+                <i>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </i>
+            </div>
+            <div class="tabs__info--right">
+                <h3 class="title">Transfer Money to Anyone, Instantly, No Fees, No BS</h3>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum explicabo possimus,
+                    iure cupiditate maxime hic inventore rerum quis adipisci dignissimos aspernatur maiores suscipit,
+                    reiciendis autem. Harum et magnam explicabo.</p>
+            </div>
+        </div>
+        <div class="tabs__button">
+            <button class="tabs__button--button yellow">01 Instant Transfer </button>
+            <button class="tabs__button--button green">02 Instant Deposit </button>
+            <button class="tabs__button--button red">03 Instant Trades </button>
+        </div>
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+
+    const btns = document.querySelectorAll(".tabs__button--button");
+    const btnContainer = document.querySelector(".tabs__button");
+
+    // This method attaches an event handler to each element. Each element is being targeted through their common shared class.
+    btns.forEach(function (btn) {
+        btn.classList.add("margin__left")
+    })
+
+    btnContainer.addEventListener("click", function (e) {
+        //event object target select child elements from parent container
+        const clicked = e.target;
+        console.log(clicked);
+
+        //btn returns a node list of the buttons. 
+        btns.forEach(function (btn) {
+            //removing active class from node list 
+            btn.classList.remove("active");
+            //adding active class to the event object target
+            clicked.classList.add("active")
+            console.log(btn);
+        })
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
