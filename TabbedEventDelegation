@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --yellow: rgb(221, 199, 0);
+            --green: rgb(0, 202, 51);
+            --red: rgb(212, 81, 58);
+
+        }
+
+        *,
+        *::after,
+        *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: inherit;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            /* background-color: rgb(236, 236, 236); */
+            background: rgb(122, 229, 245);
+            background: linear-gradient(287deg, rgba(122, 229, 245, 1) 0%, rgba(201, 246, 255, 1) 25%, rgba(151, 235, 244, 1) 54%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+            /* background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='400' cy='400' r='50%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230EF'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='400' cy='400' r='70%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%230FF'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='800'/%3E%3Cg fill-opacity='.8'%3E%3Cpath fill='url(%23b)' d='M998.7 439.2c1.7-26.5 1.7-52.7 0.1-78.5L401 399.9c0 0 0-0.1 0-0.1l587.6-116.9c-5.1-25.9-11.9-51.2-20.3-75.8L400.9 399.7c0 0 0-0.1 0-0.1l537.3-265c-11.6-23.5-24.8-46.2-39.3-67.9L400.8 399.5c0 0 0-0.1-0.1-0.1l450.4-395c-17.3-19.7-35.8-38.2-55.5-55.5l-395 450.4c0 0-0.1 0-0.1-0.1L733.4-99c-21.7-14.5-44.4-27.6-68-39.3l-265 537.4c0 0-0.1 0-0.1 0l192.6-567.4c-24.6-8.3-49.9-15.1-75.8-20.2L400.2 399c0 0-0.1 0-0.1 0l39.2-597.7c-26.5-1.7-52.7-1.7-78.5-0.1L399.9 399c0 0-0.1 0-0.1 0L282.9-188.6c-25.9 5.1-51.2 11.9-75.8 20.3l192.6 567.4c0 0-0.1 0-0.1 0l-265-537.3c-23.5 11.6-46.2 24.8-67.9 39.3l332.8 498.1c0 0-0.1 0-0.1 0.1L4.4-51.1C-15.3-33.9-33.8-15.3-51.1 4.4l450.4 395c0 0 0 0.1-0.1 0.1L-99 66.6c-14.5 21.7-27.6 44.4-39.3 68l537.4 265c0 0 0 0.1 0 0.1l-567.4-192.6c-8.3 24.6-15.1 49.9-20.2 75.8L399 399.8c0 0 0 0.1 0 0.1l-597.7-39.2c-1.7 26.5-1.7 52.7-0.1 78.5L399 400.1c0 0 0 0.1 0 0.1l-587.6 116.9c5.1 25.9 11.9 51.2 20.3 75.8l567.4-192.6c0 0 0 0.1 0 0.1l-537.3 265c11.6 23.5 24.8 46.2 39.3 67.9l498.1-332.8c0 0 0 0.1 0.1 0.1l-450.4 395c17.3 19.7 35.8 38.2 55.5 55.5l395-450.4c0 0 0.1 0 0.1 0.1L66.6 899c21.7 14.5 44.4 27.6 68 39.3l265-537.4c0 0 0.1 0 0.1 0L207.1 968.3c24.6 8.3 49.9 15.1 75.8 20.2L399.8 401c0 0 0.1 0 0.1 0l-39.2 597.7c26.5 1.7 52.7 1.7 78.5 0.1L400.1 401c0 0 0.1 0 0.1 0l116.9 587.6c25.9-5.1 51.2-11.9 75.8-20.3L400.3 400.9c0 0 0.1 0 0.1 0l265 537.3c23.5-11.6 46.2-24.8 67.9-39.3L400.5 400.8c0 0 0.1 0 0.1-0.1l395 450.4c19.7-17.3 38.2-35.8 55.5-55.5l-450.4-395c0 0 0-0.1 0.1-0.1L899 733.4c14.5-21.7 27.6-44.4 39.3-68l-537.4-265c0 0 0-0.1 0-0.1l567.4 192.6c8.3-24.6 15.1-49.9 20.2-75.8L401 400.2c0 0 0-0.1 0-0.1L998.7 439.2z'/%3E%3C/g%3E%3C/svg%3E");
+            background-attachment: fixed;
+            background-size: cover; */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            gap: 2rem;
+            height: 20rem;
+            /* border: 1px solid red; */
+            justify-content: center;
+            /* background-color: aliceblue; */
+            /* background-color: rgba(240, 248, 255, 0.267); */
+            background-color: rgba(240, 248, 255, 0.637);
+            backdrop-filter: blur(5px) contrast(.8);
+            border-radius: 15px;
+            margin-top: auto;
+            position: relative;
+
+        }
+
+
+        .tabs__info {
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: flex-start;
+            width: 60%;
+            text-align: center;
+
+        }
+
+
+        .tabs__button {
+            display: flex;
+            position: absolute;
+            top: -2rem;
+            /* border: 1px solid red; */
+        }
+
+        .title {
+            /* border: 1px solid red; */
+            display: block;
+            margin-bottom: 1rem;
+
+        }
+
+        .p {
+            line-height: 1.5rem;
+            /* border: 1px solid red; */
+            display: block;
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+
+
+        }
+
+        .margin__left {
+            margin-left: 1rem;
+            border-radius: 15px;
+            border: none;
+            padding: .7rem 1.5rem;
+            color: black;
+            background-color: rgb(0, 163, 163);
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        .red {
+            background-color: var(--red);
+        }
+
+        .green {
+            background-color: var(--green);
+        }
+
+        .yellow {
+            background-color: var(--yellow);
+        }
+
+        .active {
+            transform: translateY(-20%);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .display {
+            display: flex;
+        }
+
+        .custom-shape-divider-bottom-1647752062 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-1647752062 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 123px;
+            transform: rotateY(180deg);
+        }
+
+        .custom-shape-divider-bottom-1647752062 .shape-fill {
+            fill: #55FF00;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="tabs__info content-4 hacky">
+            <div class="tabs__info--left">
+                <i>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </i>
+            </div>
+            <div class="tabs__info--right">
+                <h3 class="title">Transfer Money to Anyone, Instantly, No Fees, No BS</h3>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum explicabo possimus,
+                    iure cupiditate maxime hic inventore rerum quis adipisci dignissimos aspernatur maiores
+                    suscipit,
+                    reiciendis autem. Harum et magnam explicabo.</p>
+            </div>
+        </div>
+
+        <div class="tabs__info content-1 hidden">
+            <div class="tabs__info--left">
+                <i>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </i>
+            </div>
+            <div class="tabs__info--right">
+                <h3 class="title">Transfer Money to Anyone, Instantly, No Fees, No BS</h3>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum explicabo possimus,
+                    iure cupiditate maxime hic inventore rerum quis adipisci dignissimos aspernatur maiores
+                    suscipit,
+                    reiciendis autem. Harum et magnam explicabo.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="tabs__info content-2 hidden">
+            <div class="tabs__info--left">
+                <i>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </i>
+            </div>
+            <div class="tabs__info--right ">
+                <h3 class="title">Deposit Money Instantly, No Wait Times</h3>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum explicabo possimus,
+                    iure cupiditate maxime hic inventore rerum quis adipisci dignissimos aspernatur maiores
+                    suscipit,
+                    reiciendis autem. Harum et magnam explicabo.</p>
+            </div>
+        </div>
+
+
+
+        <div class="tabs__info content-3 hidden">
+            <div class="tabs__info--left">
+                <i>
+                    <ion-icon name="cloud-upload-outline"></ion-icon>
+                </i>
+            </div>
+            <div class="tabs__info--right">
+                <h3 class="title">Don't Waste time with Quick, Fast Trades </h3>
+                <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eum explicabo possimus,
+                    iure cupiditate maxime hic inventore rerum quis adipisci dignissimos aspernatur maiores
+                    suscipit,
+                    reiciendis autem. Harum et magnam explicabo.</p>
+            </div>
+        </div>
+
+
+
+        <div class="tabs__button">
+            <button class="tabs__button--button yellow" data-tab="1">01 Instant Transfer </button>
+            <button class="tabs__button--button green" data-tab="2">02 Instant Deposit </button>
+            <button class="tabs__button--button red" data-tab="3">03 Instant Trades </button>
+        </div>
+
+    </div>
+
+    <div class="custom-shape-divider-bottom-1647752062">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+<script>
+
+    const btns = document.querySelectorAll(".tabs__button--button");
+    const btnContainer = document.querySelector(".tabs__button");
+    const tabs = document.querySelectorAll(".tabs__info");
+    const hack = document.querySelector(".hacky");
+
+
+
+
+
+    // This method attaches an event handler to each element. Each element is being targeted through their common shared class.
+    btns.forEach(function (btn) {
+        btn.classList.add("margin__left")
+    })
+
+
+    //logic 1) we want to select buttons in our button containers. e.target will allow us to do so. however, because btncontainer is the parent, if the container itself is clicked on, the event will bubble up and return null as no parent will be found. to prevent this, we set the button itself as the parent element in the event delgation chain by using closet. 
+
+    //event object target select child elements from parent container
+    // const clicked = e.target
+    btnContainer.addEventListener("click", function (e) {
+        const clicked = e.target.closest(".tabs__button--button");
+        console.log(clicked);
+
+
+        //logic 2) we must first remove all classes before adding them again. if we try to add classes then remove them it wont work. remember to write statements like a recipe, line by line, order is important, 
+
+        //btn returns a node list of the buttons. 
+        btns.forEach(function (btn) {
+            btn.classList.remove("active");
+        })
+
+        tabs.forEach(function (cont) {
+            cont.classList.remove("display")
+        });
+
+
+
+        //adding active class to the event object target
+        clicked.classList.add("active")
+
+        //logic 3) we want each button to display its own content. in order to associate each button with the correct content, we set an button attribute of data-tab="1" and class of content-1 on the content div. so now we can use template literal to make a dynamic selection. everytime we click on a button, the data-tab value will be inserted into the querySelector(.content-${}) and will display the corresponding value   
+
+        document.querySelector(`.content-${clicked.dataset.tab}`).classList.add("display");
+        console.log(clicked.dataset.tab);
+
+
+
+        //adding this function due to a bug, first content element would not remove and stay on screen with other elements 
+        hack.remove()
+    })
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
