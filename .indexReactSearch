@@ -1,0 +1,71 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './components/App';
+
+// ReactDOM.render(<App />, document.querySelector('#root'));
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import App from './components/App';
+
+class App extends React.Component {
+
+    //we are passing this parent function to child ass a prop
+    onSearchSubmit(value) {
+        console.log(value);
+
+        fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${value}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                data.drinks.forEach(drink => {
+                    console.log(drink);
+                })
+            })
+            .catch(err => console.log(err))
+    }
+
+    render() {
+        return (
+            <div>
+                <SearchBar keyword={this.onSearchSubmit} />
+            </div>
+        )
+    }
+}
+
+class SearchBar extends React.Component {
+
+    state = { value: "" }
+
+    //everytime we click we are calling a function from class app
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        this.props.keyword(this.state.value);
+    }
+
+
+    onInputChange = (e) => {
+        this.setState({ value: e.target.value })
+
+    }
+
+
+
+    render() {
+        return (
+            <div>
+                <h3 class="text-center">Awesome Cocktails</h3>
+                <form onSubmit={this.onFormSubmit} class="text-center">
+                    <input type="text" onChange={this.onInputChange} value={this.state.value}></input>
+                    <button>Get Drink</button>
+                </form>
+            </div>
+        )
+    }
+
+}
+
+
+
+ReactDOM.render(<App />, document.querySelector("#root"));
