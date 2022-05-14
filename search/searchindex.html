@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    -->
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/34ae49ad9e.js" crossorigin="anonymous"></script>
+  <title>Grass Roots Email Capture</title>
+
+  <!-- Hotjar Tracking Code for https://kimma.dev/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 2957432, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+
+  <style>
+    :root {
+        --border: 1px solid red;
+      }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background: whitesmoke;
+    }
+
+    .container__top {
+      width: 100%;
+      margin: auto;
+      background: whitesmoke;
+      padding-top: 2rem;
+
+
+    }
+    .container {
+      width: 100%;
+      margin: auto;
+      background: whitesmoke;
+      padding:3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    
+    .related__container {
+      width: 80%;
+      margin: auto;
+      background: whitesmoke;
+      padding:1rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+
+      input{
+        /* display: block; */
+        padding: .5rem 4rem;
+        width:50%;
+  
+  
+
+      }
+
+      .btn{
+      padding: .5rem 2rem;
+      /* border: none;
+      background-color: whitesmoke; */
+      margin-right: 2rem;
+      width:10%;
+
+
+      }
+
+      .btn-nxt{
+        padding: .2rem 2rem;
+      }
+      .btn-back{
+        padding: .2rem 2rem;
+      }
+      .fa-glasses{
+          text-align: center;
+          background-color:#fbff00;
+          border-radius: 50%;
+          margin-right: .5rem;
+      }
+      
+      .title__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap:.5rem
+ 
+
+      }
+      .input__container{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+      }
+      .button__container{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-right: 4rem;
+
+      }
+
+      .results{
+       width: 80%;
+      margin-bottom: 1.5rem;
+      }
+
+      /* @media screen and(max-width:600px){
+
+        .results{
+       width:90% !important;
+       background-color: #fbff00 !important;
+
+      }
+
+  
+    
+      
+      } */
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="container__top">
+      <div class="title__container">
+        <!-- <i class="fa-solid fa-glasses fa-2x"></i> -->
+        <h3 style="text-align: center; margin-bottom: .5rem;">Free Web Search</h3>
+      </div>
+      
+     <div class="input__container">
+        <i class="fa-solid fa-glasses fa-2x"></i>
+        <input class="inputText" type="text">  
+        <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button> 
+     </div>
+   
+
+
+    <div class="button__container">
+      <button class="btn-back">back</button>
+      <button class="btn-nxt">next</button>
+    </div>
+
+
+  </div>
+
+  <div class="container">
+      <div class="results">hello</div>
+  </div>
+  <div class="related__container">
+  </div>
+
+  <script>
+
+  const container = document.querySelector(".container")
+  const inputText = document.querySelector(".inputText")
+  const btn = document.querySelector(".btn")
+  const btnNxt = document.querySelector(".btn-nxt")
+  const btnBack = document.querySelector(".btn-back")
+  const li = document.querySelectorAll(".list-item")
+  const relatedContainer = document.querySelector(".related__container")
+
+
+
+
+  //
+  btn.addEventListener("click", function () {
+    inputValue = document.querySelector(".inputText").value;
+
+
+
+//     const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Host': 'contextualwebsearch-websearch-v1.p.rapidapi.com',
+// 		'X-RapidAPI-Key': '9309fb34b9msh3db4f20ad3afa39p18dd39jsn533ea7430b48'
+// 	}
+// };
+
+const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Host': 'contextualwebsearch-websearch-v1.p.rapidapi.com',
+        'X-RapidAPI-Key': 'd8cf02cdcamsh2793d59e11d342bp12f107jsn77d7901237f6'
+      }
+    };
+
+
+
+
+    let n = 1;
+
+    //get keyword 
+    fetch(`https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${inputValue}&pageNumber=${n}&pageSize=10&autoCorrect=true`, options)
+      .then(response => response.json())
+      .then(response => {
+        console.log(response);
+        console.log(response.value);
+
+
+        //next page 
+ btnNxt.addEventListener("click", function(){
+    n++;
+  console.log(n);
+  fetch(`https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${inputValue}&pageNumber=${n}&pageSize=10&autoCorrect=true`, options)
+	.then(response => response.json())
+	.then(response => {
+    console.log(response);
+
+    container.innerHTML =" "
+   
+    response.value.forEach(article => {
+     
+
+      const div =  document.createElement("div");
+      div.classList.add("results")
+ div.innerHTML =
+            
+            
+            `
+    
+       
+  <div style="font-size:14px; margin-bottom: .5rem"><a target="_blank" style="color:#460DAB; text-decoration: none; " href="${article.url}">${article.url}</a></div>
+
+  <p style="font-size: 18px ;"><a target="_blank" style="color:#460DAB; text-decoration: none;" href="${article.url}">${article.title}</a></p>
+
+  <p style="font-size: 14px; margin-top: .3rem; line-height: 1.5rem; color:#666666;  word-wrap: break-word;
+overflow: hidden;   text-overflow: ellipsis;">${article.description}</p>
+
+
+
+    
+            
+
+            `
+
+            container.append(div)
+     
+            response.relatedSearch.forEach(function(description){
+                    const p2 = document.createElement("div");
+                    p2.style.width = "60%";
+                    console.log(description + "this is desc");
+                    p2.innerHTML = `<p style="color:black; font-size:12px; margin-bottom:.5rem"><a style="text-decoration:none;" href="">${description}</a></p>`;
+                    relatedContainer.append(p2);
+        
+              console.log(n);
+              console.log(response.totalCount);
+              console.log("does this work");
+    })
+    
+    
+
+          })
+
+          
+
+    })
+
+    
+  
+    // return n;
+  })
+
+  
+
+
+
+ 
+
+
+  //remove this line if you want results to keep loading on same page, like click to keep loading feature 
+  container.innerHTML =" "
+
+        response.value.forEach(function (article) {
+
+          console.log(article+ "this is article");
+
+
+
+         
+      const div =  document.createElement("div");
+      div.classList.add("results");
+            div.innerHTML =
+            
+            
+            `
+    
+       
+  <div style="font-size:14px; margin-bottom: .5rem"><a target="_blank" style="color:#460DAB; text-decoration: none; " href="${article.url}">${article.url}</a></div>
+
+  <p style="font-size: 18px ;"><a target="_blank" style="color:#460DAB; text-decoration: none;" href="${article.url}">${article.title}</a></p>
+
+  <p style="font-size: 14px; margin-top: .3rem; line-height: 1.5rem; color:#666666;  word-wrap: break-word;
+overflow: hidden;   text-overflow: ellipsis;">${article.description}</p>
+
+
+
+    
+            
+
+            `
+            container.append(div)
+
+
+          })
+          response.relatedSearch.forEach(function(description){
+            const p2 = document.createElement("p");
+            p2.style.width = "60%";
+            console.log(description + "this is desc");
+            p2.innerHTML = `<p style="color:black; font-size:12px; margin-bottom:.5rem"><a style="text-decoration:none;" href="">${description}</a></p>`;
+           relatedContainer.append(p2);
+          
+          
+        })
+
+      })
+
+
+  })
+    .catch(err => console.error(err));
+
+
+
+
+
+
+
+
+
+</script>
+
+    
+</body>
