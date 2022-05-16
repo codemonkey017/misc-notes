@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday email</title>
+    <!-- Hotjar Tracking Code for https://kimma.dev/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2957432, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+
+<style>
+    @media only screen and (max-width: 600px) {
+  .container {
+     width: 100% !important;
+  }
+
+  .image{
+      max-width: 100% !important;
+
+      
+  }
+
+  .text__grid--left, .text__grid--right, .img__grid--left, .img__grid--right {
+      width: 100%!important;
+      text-align: center  !important;
+      margin: auto!important;
+    
+
+  }
+
+}
+</style>
+</head>
+
+<body style="margin:0; padding:0; box-sizing: border-box;">
+
+    <!-- start of email -->
+
+    <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color:#bdbdbd;">
+        <tr>
+            <td>
+                <!-- start of container  -->
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #FFFFFF;"  class="container ">
+
+                    <!-- start of header img  -->
+                    <tr>
+                        <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" >
+                                <tr>
+                                    <td>
+                                        <img align="center" width="100%" src="https://media.discordapp.net/attachments/975579911605616690/975580033999573043/header.jpeg?width=1025&height=128" alt="" class="image">
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <!-- start of hero img  -->
+                    <tr>
+                        <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" >
+                                <tr>
+                                    <td>
+                                        <a href=""><img align="center" width="100%" src="https://cdn.discordapp.com/attachments/975579911605616690/975579986306166794/hero.gif" alt="" class="image"></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- start of img grid  -->
+                    <tr>
+                        <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Ubuntu,sans-serif; background-color: white; text-align: center; color:#222222;" >
+                                <tr>
+                                    <td>
+                                        <table class="img__grid--left" align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td>
+                                                   <a href=""> <img align="center" width="100%" src="https://cdn.discordapp.com/attachments/975579911605616690/975579987841257542/pic6.jpeg" alt="" class="image"></a>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="img__grid--right" align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%" >
+                                            <tr>
+                                                <td>
+                                                  <a href=""><img align="center" width="100%" src="https://cdn.discordapp.com/attachments/975579911605616690/975579987610578964/pic5.jpeg" alt="" class="image"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td>
+                                                    <a href=""><img align="center" width="100%" src="https://media.discordapp.net/attachments/975579911605616690/975579987371515944/pic4.jpeg?width=289&height=390" alt="" class="image">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%" >
+                                            <tr>
+                                                <td>
+                                                  <a href="">  <img align="center" width="100%" src="https://media.discordapp.net/attachments/975579911605616690/975579987166003270/pic-3.jpeg?width=289&height=390" alt="" class="image"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td style="color:#959595;">
+                                                    <a href=""><img align="center" width="100%" src="https://media.discordapp.net/attachments/975579911605616690/975579986914312253/pic-2.jpeg?width=289&height=390" alt="" class="image"></a>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%;" >
+                                            <tr>
+                                                <td style="color:#959595">
+                                                    <a href=""><img align="center" width="100%" src="https://media.discordapp.net/attachments/975579911605616690/975579986675245056/pic-1.jpeg?width=289&height=390" alt="" class="image"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- start of header button  -->
+                    <tr>
+                        <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Ubuntu,sans-serif; background-color: white; text-align: center; color: #525F7F;" >
+                                <tr >
+                                    <td >
+
+                                        <a href="" style="color: #ffffff;font-size: 12px;
+                                        background: #C72C27;
+                                        width:100%;
+                                        text-decoration: none;
+                                        padding: 12px 0 ;
+                                        display: inline-block;
+                                        letter-spacing: 3px;">SHOP THE SALE</a>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                       <!-- start of text grid  -->
+                       <tr>
+                        <td>
+                            <table class="text__grid--left" align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="background-color: white; text-align: center; color:#959595; padding-top:16px" >
+                                <tr>
+                                    <td>
+                                        <table class="text__grid--left" align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td style="color:#959595;padding:6px">
+                                                   <a style="text-decoration: none; color:#959595; letter-spacing: 2px;" href="#">STATIONERY</a>
+                                                   <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="text__grid--right" align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%" >
+                                            <tr>
+                                                <td  style="color:#959595;; padding:6px">
+                                                    <a  style="text-decoration: none; color:#959595; letter-spacing: 2px;" href="#">DESK & PLANNERS</a>
+                                                    <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                            <table class="text__grid--left" align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="background-color: white; text-align: center; color:#959595;" >
+                                <tr>
+                                    <td>
+                                        <table class="text__grid--left" align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td style="color:#959595; padding:6px">
+                                                   <a style="text-decoration: none; color:#959595; letter-spacing: 2px;" href="#">HOME DECOR</a>
+                                                   <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="text__grid--right" align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%" >
+                                            <tr>
+                                                <td  style="color:#959595; padding:6px">
+                                                    <a  style="text-decoration: none; color:#959595; letter-spacing: 2px; "href="#">HOLIDAY</a>
+                                                    <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                            <table class="text__grid--left" align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="background-color: white; text-align: center; color:#959595;" >
+                                <tr>
+                                    <td>
+                                        <table class="text__grid--left" align="left" border="0" cellpadding="0" cellspacing="0"style="width:50%" >
+                                            <tr>
+                                                <td style="color:#959595; padding:6px">
+                                                   <a style="text-decoration: none; color:#959595; letter-spacing: 2px;" href="#">ACCESSORIES</a>
+                                                   <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                    
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table class="text__grid--right" align="right" border="0" cellpadding="0" cellspacing="0" style="width:50%" >
+                                            <tr>
+                                                <td  style="color:#959595; padding:6px">
+                                                    <a  style="text-decoration: none; color:#959595; letter-spacing: 2px;"href="#">BEST SELLERS</a>
+                                                    <p style= "border-bottom: 2px solid #959595; padding-top:12px; width:90%; margin: auto;"></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                        </td>
+                    </tr>
+
+                  
+                    
+                    
+                
+<!--  start of icons -->
+
+                    <tr>
+                        <td>
+                            <table align="center" border="0" cellpadding="0" cellspacing="0"width="50%" style=" background-color: white; text-align: center; color: #525F7F; padding-top: 16px; letter-spacing: 5px; margin: auto; " >
+                                <tr >
+                                    <td >
+                                   <a href=""><img src="https://media.discordapp.net/attachments/975579911605616690/975630750265249822/36fdb180641e4086b0d6bbc6aaf20567.png" width="25" alt=""></a>
+                                 <a href="">  <img src="https://media.discordapp.net/attachments/975579911605616690/975630750491770880/21cf2a994cd4cb59c0684223fe1a01c8.png" width="25" alt=""></a>
+                                <a href="">   <img src="https://media.discordapp.net/attachments/975579911605616690/975630750705647646/9fdd83ea30b97df6721aa84ce274bc44.png" width="25" alt=""></a>
+                                <a href="">   <img src="https://media.discordapp.net/attachments/975579911605616690/975630750923759706/8754e5ac4fc8854ca192177e3a4c852f.png" width="25" alt=""></a>
+                                
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                     <!-- start of footer  -->
+                     <tr>
+                        <td>
+
+                            <!-- start of footer container  -->
+                            <table style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Ubuntu,sans-serif; text-align: center; color: white; font-size: 12px;">
+                                <tr>
+                                    <td>
+                                         <!-- start of footer content  -->
+                                        <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Ubuntu,sans-serif; text-align: center; color: #7E7D7E; font-size: 12px; padding-top: 10px;">
+                                            <tr >
+                                                <td >
+                                                  <p>*Take 30% off with code: HOLIDAY30. Sale excludes sleepwear, swimwear and wallpaper samples. Promotion cannot be combined with other offers and is not valid on previous purchases. Valid online and in our Winter Park storefront from 11/24 to 11/30/21 at 11:59pm pst.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <tr>
+                                            <td>
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0"width="90%" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Ubuntu,sans-serif; text-align: center; color: #7E7D7E; font-size: 8px; padding: 12px 0 48px ">
+                                                    <tr >
+                                                        <td >
+                                                            Rifle Paper Co. 558 W New England Ave. No. 150, Winter Park, FL 32789 <br>
+                                                            © 2008—2021 RIFLE, INC. ALL RIGHTS RESERVED. TERMS & PRIVACY <br>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                </tr>
+
+
+
+                    <!-- end of container  -->
+                </table>
+
+
+                <!-- end of email  -->
+            </td>
+        </tr>
+    </table>
+  
+        
+
+             
+
+
+</body>
+
+</html>
+
+
