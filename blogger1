@@ -99,9 +99,10 @@
     </section>
 
       <!-- start of hero top -->
-    <section class="content__container" style="font-family: 'Overpass', sans-serif;">
+      <section class="content__container" style="font-family: 'Overpass', sans-serif;">
         <section id="hero" class="hero__container container">
-            <h1>Designed for the Future</h1>
+           
+           <h1>Designed for the Future</h1>
             <div class="hero__container--section-1">
                 <div class="hero__section-1--left">
                    <div> <h3>Introducing an extensible editor</h3>
@@ -112,7 +113,7 @@
                 </div>
                 <div class="hero__section-1--right">
                    <img class="img img__editor--desktop" src="./images/illustration-editor-desktop.svg" alt="">
-                   <img class="img img__editor--mobile" src="./images/illustration-editor-mobile.svg" alt="">
+                   <img class="img img__editor--mobile" src="./images/illustration-editor-mobile.svg"  alt="">
                 </div>
             </div>
         </section>
@@ -121,20 +122,73 @@
 
 
     
-    <!-- <section class="content__container--mid">
+    <section class="content__container--mid">
+         <!-- start of hero mid -->
         <section id="hero__mid" class="hero__container--mid container">
             <div class="hero__section-2--left">
-                <img class="img" src="./images/illustration-phones.svg" alt="">
+                <img class="img-2" src="./images/illustration-phones.svg" alt="">
             </div>
             <div class="hero__section-2--right">
-                    <h3>Robust content management</h3>
-                    <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control. </p>
+                    <h3>State of the Art Infrastructure</h3>
+                    <p>  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive. </p>
 
             </div>
-
         </section>
-  
-    </section> -->
+    <!-- end of hero mid -->
+
+    </section>
+
+          <!-- start of hero bottom -->
+          <section class="content__container-2" style="font-family: 'Overpass', sans-serif;">
+            <section id="hero-2" class="hero__container-2 container">
+                <div class="hero__container--section-2">
+                    <div class="hero__section-2--right">
+                       <img class="img-3 img__editor--desktop-2" src="./images/illustration-laptop-desktop.svg" alt="">
+                       <img class="img-3 img__editor--mobile-2" src="./images/illustration-laptop-mobile.svg" alt="">
+                    </div>
+                    <div class="hero__section-2--left">
+                        <div> <h3>Free, open, simple</h3>
+                         <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p></div>
+     
+                        <div> <h3>Powerful tooling</h3>
+                         <p>  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                            capable of producing even the most complicated sites. </p></div>
+                     </div>
+                </div>
+            </section>
+        <!-- end of hero bottom -->
+        </section>
+
+
+        <!-- start of footer -->
+        <footer class="footer">
+            <div><h1>Blogr</h1></div>
+            <div>
+                <h5>Product</h5>
+                <a href="">Overview</a>
+                <a href="">Pricing</a>
+                <a href="">Marketplace</a>
+                <a href="">Features</a>
+        
+            </div>
+            <div>
+                <h5>Company</h5>
+                <a href="">About</a>
+                <a href="">Team</a>
+                <a href="">Blog</a>
+                <a href="">Careers</a>
+            </div>
+            <div>
+                <h5>Connect</h5>
+                <a href="">Contact</a>
+                <a href="">Newsletter</a>
+                <a href="">LinkedIn</a>
+            </div>
+
+
+            <!-- end of footer -->
+        </footer>
 
     
 
@@ -149,10 +203,12 @@
    const hamburger =  document.querySelector(".hamburger");
    const container = document.querySelector(".header__container");
    const hamburgerContent = document.querySelector(".hamburger__content");
+   const topCon = document.querySelector(".top__container");
 
    hamburger.addEventListener("click", function(){
        alert("hello")
        hamburgerContent.style.display = "flex"
+       topCon.style.height="50rem"
 
    })
 </script>
