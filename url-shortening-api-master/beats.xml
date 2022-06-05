@@ -1,0 +1,132 @@
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="11204.43 " z="3219.70" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="12051.21" z="3483.32" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="10612.85" z="2396.93" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="10156.89" z="2147.80" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="7578.63" z="3158.25" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="12168.36" z="3499.41" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="4272.20" z="10974.68" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="4590.11" z="9552.15" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="5262.87" z="9785.67" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="4490.94 " z="10544.54" r="1"/>
+<zone name="Graze" smin="0" smax="0" dmin="1" dmax="1" x="12459.05 " z="3534.82" r="1"/>
+
+
+
+
+<type name="SurvivorM_Mirek">
+    <attachments>
+        <item name="BeanieHat_Green" />
+    </attachments>
+    <attachments>
+        <item name="Bandana_Camopattern" />
+    </attachments>
+    <attachments>
+        <item name="GorkaEJacket_Autumn" />
+    </attachments>
+    <attachments>
+        <item name="GorkaPants_Autumn" />
+    </attachments>
+    <attachments>
+        <item name="JungleBoots_Green" />
+    </attachments>
+    <attachments>
+        <item name="HighCapacityVest_Olive" />
+    </attachments>
+    <attachments>
+        <item name="AliceBag_Green" />
+    </attachments>
+    <attachments>
+        <item name="TacticalGloves_Green" />
+    </attachments>
+    <attachments>
+        <item name="Mag_MKII_10Rnd" />
+    </attachments>
+    <attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+    <attachments>
+        <item name="MKII" />
+    </attachments>
+    <attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+    <attachments>
+        <item name="GhillieAtt_Woodland" />
+    </attachments>
+    <attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+    <attachments>
+        <item name="Compass" />
+    </attachments>
+    <attachments>
+        <item name="RabbitSnareTrap" />
+    </attachments>
+    <attachments>
+        <item name="Mag_AKM_Drum75Rnd" />
+    </attachments>
+<attachments>
+        <item name="AKM" />
+    </attachments>
+<attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+<attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+<attachments>
+        <item name="AmmoBox_762x39_20Rnd" />
+    </attachments>
+    <attachments>
+        <item name="AK_PlasticBttstck_Green" />
+    </attachments>
+<attachments>
+        <item name="AK_PlasticHndgrd" />
+    </attachments>
+<attachments>
+        <item name="AK_Bayonet" />
+    </attachments>
+<attachments>
+        <item name="AK_Suppressor" />
+    </attachments>
+<attachments>
+        <item name="KashtanOptic" />
+    </attachments>
+     <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="AmmoBox_22_50Rnd" />
+    </attachments>
+ <attachments>
+        <item name="Mag_Ruger1022_30Rnd" />
+    </attachments>
+ <attachments>
+        <item name="Ruger1022" />
+    </attachments>
+ <attachments>
+        <item name="HuntingOptic" />
+    </attachments>
+ <attachments>
+        <item name="CannabisSeeds" />
+    </attachments>
+ <attachments>
+        <item name="CannabisSeeds" />
+    </attachments>
+ <attachments>
+        <item name="FieldShovel" />
+    </attachments>
+</type>
+

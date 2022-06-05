@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34ae49ad9e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- start of nav  -->
+    <nav class="navbar container">
+    <div class="navbar__flex--left">
+        <img src="./images/logo.svg" alt="">
+        <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing </a></li>
+            <li><a href="">Resource</a></li>
+        </ul>
+    </div>
+    <div class="navbar__flex--right">
+        <ul>
+            <li><a href="">  Login</a></li>
+            <li><a href="">  Sign Up </a></li>
+            <img class="nav__hamburger--icon" src="./images/hamburger.png" alt="">
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- start of hero  -->
+<section class="hero container">
+    <div class="hero__ham--container">
+        <div class="hero__ham--left">
+         <ul>
+             <li><a href="">Features</a></li>
+             <li><a href="">Pricing </a></li>
+             <li><a href="">Resource</a></li>
+         </ul>
+        </div>
+         <div class="hero__ham--right">
+             <ul>
+                 <li><a href="">  Login</a></li>
+                 <li><a href="">  Sign Up </a></li>
+             </ul>
+         </div>
+     </div>
+    <div class="hero__flex--left">
+        <h1>More than just shorter links</h1>
+        <h3> Build your brand’s recognition and get detailed insights 
+            on how your links are performing.</h3>
+            <a href=""> Get Started</a>
+        </div>
+        <div class="hero__flex--right">
+       <div class="hero__btn--container">
+        <img class="hero__img" src="./images/illustration-working.svg" alt="">
+       </div>
+        </div>
+    </section>
+
+
+    
+    <!-- start of searchbar  -->
+    <section class="searchbar">
+            <input class="searchbar__input" type="text" placeholder="Shorten a link here...">
+        <button class="submit"> Shorten It!</button>
+     
+    </section>
+
+    
+    <!-- start of features  -->
+    <section id="features">
+        <div class="features">
+
+            <div class="features__loading">
+              <p class="loader spin"></p>
+              <p >Geenrating Short URL</p>
+            </div>
+            <div class="features__api fadeIn">
+        
+                    <div class="features__api--left">
+                        <p class="orginal__url">https:://www.google.com</p>
+                    </div>
+                    <div class="features__api--right">
+                        <a id="new__url--href" class="new__url" href="" target="_blank"></a>
+                        <button class="btn__copy">Copy</button>
+                    </div>
+                    
+
+
+            </div>
+            <div class="features__title--container">
+                <h1> Advanced Statistics</h1>
+                 <p>Track how your links are performing across the web with our 
+                advanced statistics dashboard.</p> 
+            </div>
+
+                <div class="features__grid--container">
+                    <div class="features__box--1">
+                    <div class="feature__box--flex">
+                        <img class="feature__box--content" src="./images/icon-brand-recognition.svg" alt="">
+                    </div>
+                    <h3> Brand Recognition</h3>
+                    <p>  Boost your brand recognition with each click. Generic links don’t 
+                    mean a thing. Branded links help instil confidence in your content.</p>
+                    </div>
+                    <div class="features__box--2">
+                    <div class="feature__box--flex">
+                        <img class="feature__box--content" src="./images/icon-detailed-records.svg" alt="">
+                    </div>
+                    <h3> Detailed Records</h3>
+                    <p>  Gain insights into who is clicking your links. Knowing when and where 
+                        people engage with your content helps inform better decisions.</p>
+                    </div>
+                    <div class="features__box--3">
+                    <div class="feature__box--flex">
+                        <img class="feature__box--content" src="./images/icon-fully-customizable.svg" alt="">
+                    </div>
+                    <h3> Fully Customizable</h3>
+                    <p>  Improve brand awareness and content discoverability through customizable 
+                        links, supercharging audience engagement.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+                <!-- start of download -->
+                <section class="download">
+                    <h1>  Boost your links today</h1>
+                    <a href="">  Get Started</a>
+                </section>
+
+                <!-- start of footer -->
+
+                <section class="footer">
+                    <div class="grid--1">
+                        <h1>Shortly</h1>
+                    </div>
+                    <div class="grid--2">
+                        <h5> Features</h5>
+                        <a href="">Link Shortening</a>
+                        <a href="">Branded Links</a>
+                        <a href="">Analytics</a>
+                    </div><div class="grid--3">
+                        <h5>Resources</h5>
+                        <a href="">Blog</a>
+                        <a href="">Developers</a>
+                        <a href="">Support</a>
+                    </div><div class="grid--4">
+                        <h5>Company</h5>
+                        <a href="">About</a>
+                        <a href="">Our Teams</a>
+                        <a href="">Careers</a>
+                        <a href="">contact</a>
+                    </div>
+                
+                    
+                    
+                    <div class="grid--5">
+                            <a href=""><img src="./images/icon-facebook.svg" alt=""></a>
+                            <a href=""><img src="./images/icon-twitter.svg" alt=""></a>
+                            <a href=""><img src="./images/icon-pinterest.svg" alt=""></a>
+                            <a href=""><img src="./images/icon-instagram.svg" alt=""></a>
+                    </div>
+                </section>
+
+
+  
+   
+
+    <script>
+     
+
+
+  
+        const searchbar = document.querySelector(".searchbar__input")
+        const submit = document.querySelector(".submit")
+        const orginalUrl = document.querySelector(".orginal__url")
+        const newUrl = document.querySelector(".new__url")
+        const btnCopy = document.querySelector(".btn__copy")
+        const features_api = document.querySelector(".features__api")
+        const features = document.querySelector(".features")
+        const urlhref = document.getElementById("new__url--href");
+        const loading = document.querySelector(".features__loading");
+ 
+        submit.addEventListener("click", function(){
+        let url = searchbar.value;
+        searchbar.value=""
+        btnCopy.textContent ="Copy"
+        btnCopy.style.background = "aqua"
+        features_api.style.display = "none"
+        
+        loading.style.display = "flex"
+        fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
+        .then(response => response.json())
+        .then(data => {
+                
+
+            console.log(data.result);
+            setTimeout(() => {
+            loading.style.display = "none"
+            features_api.style.display = "flex"
+            orginalUrl.textContent = data.result.original_link;
+            newUrl.textContent = data.result.short_link2;
+            urlhref.href = data.result.original_link;
+            ;
+}, "3000")
+           
+
+
+
+            btnCopy.addEventListener("click", function(e){
+               const content = newUrl.textContent;
+               navigator.clipboard.writeText(content)
+               btnCopy.textContent ="Copied!"
+               btnCopy.style.background = "hsl(257, 27%, 26%)"
+
+            
+           
+            })
+        })
+        
+         })
+
+ 
+    </script>
+   
+  
+
+</body>
+</html>
