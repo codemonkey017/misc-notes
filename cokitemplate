@@ -1,0 +1,691 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <title></title>
+
+    <style type="text/css">
+        /* Basics */
+        body {
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            background-color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        table {
+            border-spacing: 0;
+            /* font-family: sans-serif; */
+            color: #333333;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        .webkit {
+            max-width: 600px;
+        }
+
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+
+        /* .contents {
+            width: 100%;
+        } */
+
+        p {
+            Margin: 0;
+        }
+
+        a {
+            color: #ee6a56;
+            text-decoration: underline;
+        }
+
+        .h1 {
+            font-size: 21px;
+            font-weight: bold;
+            Margin-bottom: 18px;
+
+        }
+
+        .h2 {
+            font-size: 18px;
+            font-weight: bold;
+            Margin-bottom: 12px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .full-width-image img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        /* One column layout */
+        .one-column .contents {
+            text-align: left;
+        }
+
+        .one-column p {
+            font-size: 14px;
+            Margin-bottom: 10px;
+        }
+
+        /*Two column layout*/
+        .two-column {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .two-column .column {
+            width: 100%;
+            max-width: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .two-column .contents {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .two-column img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+        }
+
+        .two-column .text {
+            padding-top: 10px;
+        }
+
+        /*Three column layout*/
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .three-column .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .three-column img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+        }
+
+        .three-column .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .three-column .text {
+            padding-top: 10px;
+        }
+
+        /* Left sidebar layout */
+        .left-sidebar {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .left-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .left-sidebar .left {
+            max-width: 100px;
+        }
+
+        .left-sidebar .right {
+            max-width: 500px;
+        }
+
+        .left-sidebar .img {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+        }
+
+        .left-sidebar .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .left-sidebar a {
+            color: #85ab70;
+        }
+
+        /* Right sidebar layout */
+        .right-sidebar {
+            text-align: center;
+            font-size: 0;
+        }
+
+        .right-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .right-sidebar .left {
+            max-width: 100px;
+        }
+
+        .right-sidebar .right {
+            max-width: 500px;
+        }
+
+        .right-sidebar .img {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+        }
+
+        .right-sidebar .contents {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .right-sidebar a {
+            color: #70bbd9;
+        }
+
+        /*Media Queries*/
+        @media screen and (max-width: 400px) {
+
+            .two-column .column,
+            .three-column .column {
+                max-width: 100% !important;
+            }
+
+            .two-column img {
+                max-width: 100% !important;
+            }
+
+            .three-column img {
+                max-width: 50% !important;
+            }
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 2000px) {
+            .three-column .column {
+                max-width: 33% !important;
+            }
+
+            .two-column .column {
+                max-width: 50% !important;
+            }
+        }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+        table {border-collapse: collapse;}
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+    <center class="wrapper">
+        <div class="webkit">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+            <table class="outer" align="center" style=" background-color: #530b72;">
+                <!-- CONTENT START -->
+
+
+
+
+                <!-- start of hero -->
+                <tr>
+                    <td class="one-column" mc:edit="hero">
+                        <table width="98%" style=" margin: 0 auto 0; background-color: #eb0cbb52;">
+                            <tr>
+                                <td background="https://media.discordapp.net/attachments/954175466758111272/987639218790608986/bg.png?width=1025&height=346"
+                                    style="width: 100%;" valign="top">
+                                    <!--[if gte mso 9]>
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:120px;height:92px;">
+    <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#7bceeb" />
+    <v:textbox inset="0,0,0,0">
+  <![endif]-->
+                                    <div>
+                                        <!-- <img style="width:100%; max-width: 50px;"
+                                            src="https://cdn.pixabay.com/photo/2014/04/03/00/27/globe-308335__340.png"
+                                            alt=""> -->
+                                        <h1 style="color:white; text-align:center; padding-top:40px; line-height:60px;">
+                                            We are committed to
+                                            making the
+                                            difference</h1>
+                                        <p
+                                            style="color:white; text-align:center; padding-top:10px; line-height:25px; width:80%; margin: auto;">
+                                            To make a measurable difference in the lives of children who are in
+                                            desperate
+                                            need of help, whose future hangs in the balance, requires well-thought-out
+                                            and intentional programs for intervention.</p>
+                                    </div>
+                                    <!--[if gte mso 9]>
+                                      </v:textbox>
+                                    </v:rect>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0"
+                                        style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; padding: 20px 0; ">
+                                        <tr>
+                                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 0px; text-align: center;"
+                                                valign="top" align="center"> <a href="https://cokintl.org/"
+                                                    target="_blank"
+                                                    style="display: inline-block; color: #ffffff; background-color:#530b72; border:none;border-radius:100px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize"
+                                                    title="Learn More">Learn More</a> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /hero -->
+
+                <!-- start of header-->
+                <tr>
+                    <td class="one-column" mc:edit="header">
+                        <table width="98%" style=" margin: 0 auto 0; background-color: #F7F7F9;  padding:20px 0 0;">
+                            <tr>
+                                <td class="contents">
+                                    <img style="width:100%; max-width: 150px; margin: auto; display: block; "
+                                        src="https://media.discordapp.net/attachments/954175466758111272/987638830842675210/logo.png"
+                                        alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /header -->
+
+                <!-- start of title features-->
+                <tr>
+                    <td class="one-column" mc:edit="title_features">
+                        <table width="98%"
+                            style="border: 1px solid rgba(255, 255, 255, 0); margin: 0 auto 0px; background-color: #F7F7F9; padding: 20px 0 10px;">
+                            <tr>
+                                <td class="contents">
+                                    <h4
+                                        style="letter-spacing:2px; color: #eb0cba; margin: 10px auto 0; text-align: center; padding-bottom:8px; font-weight: 300; text-decoration: underline #31f1b7 3px; font-family: 'Montserrat', sans-serif; font-size: 20px;">
+                                        🆂🅴🆁🆅🅸🅲🅴🆂</h4>
+                                    <h2 style="text-align: center; color: #333333; margin-top: 5px;">
+                                        Why We Exists?</h2>
+                                    <p
+                                        style="text-align: center; margin-top: 30px; font-size: 16px; font-weight: 300; color: #eb0cba;">
+                                        Many children in
+                                        Sub Saharan Africa
+                                        are not in
+                                        school.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /title features -->
+
+                <!-- features -->
+                <tr>
+                    <td class="two-column"
+                        style="width: 98%; display: block; margin: 0 auto 0; background-color: #F7F7F9; padding-bottom: 20px; ">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="80%" align="center">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents" mc:edit="features_left">
+                                            <tr>
+                                                <td>
+                                                    <img style="max-width:200px; width: 100%;  margin: 0px auto 0; display: block;"
+                                                        src="https://media.discordapp.net/attachments/954175466758111272/987638830611968059/laptop2.png?width=441&height=390"
+                                                        alt="" />
+                                                    <!-- <h3 style="text-align:center;">Data Literacy</h3>
+                                                    <p style="text-align:center;">there is an extremely low rate of
+                                                        data literacy</p> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text" style="text-align:center; line-height: 20px;">
+                                                    <h3>Data Literacy</h3>
+                                                    there is an extremely high rate of digital
+                                                    literacy
+                                                    and technology poverty among students, teachers, and school
+                                                    administrators.
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="80%" align="center" style="padding-bottom: 20px;">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents" mc:edit="features_right">
+                                            <tr>
+                                                <td>
+                                                    <img style="max-width:200px; width: 100%; margin: 0px auto 0; display: block;"
+                                                        src="https://media.discordapp.net/attachments/954175466758111272/987638859670110218/student.png?width=454&height=390"
+                                                        alt="" />
+                                                    <!-- <h3 style="text-align:center;">Student Progress</h3>
+                                                    <p style="text-align:center;">education to most of the African
+                                                        children is not transparent</p> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text" style="text-align:center; line-height: 20px;">
+                                                    <h3>Student Progress</h3>
+                                                    <p> The education to most of the African children is not transparent
+                                                        and monitoring the progress in learning outcomes of students.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- /features -->
+
+                <!-- start of donate-->
+                <tr>
+                    <td class="one-column" mc:edit="donate">
+                        <table width="98%" style=" margin: 0 auto 0; background-color: #eb0cbb0a ;">
+                            <tr>
+                                <td background="https://media.discordapp.net/attachments/954175466758111272/987638828103774268/donatebg.png?width=1025&height=317"
+                                    style="width: 100%; background-position: center; background-size: cover;"
+                                    valign="top">
+                                    <!--[if gte mso 9]>
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:120px;height:92px;">
+    <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#7bceeb" />
+    <v:textbox inset="0,0,0,0">
+  <![endif]-->
+                                    <div>
+                                        <p
+                                            style="color:white; text-align:center; padding-top:40px; line-height:25px; width:80%; margin: auto;">
+                                            All Donations made to Computer for Kids International, Inc. are tax
+                                            deductible to the extend allow under IRS Regulations!</p>
+                                    </div>
+                                    <!--[if gte mso 9]>
+                                      </v:textbox>
+                                    </v:rect>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0"
+                                        style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; padding: 30px 0; ">
+                                        <tr>
+                                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; border-radius: 0px; text-align: center;"
+                                                valign="top" align="center"> <a
+                                                    href="https://www.paypal.com/donate?token=PK7DjPWo3EIcw9TLTvvcsn2RgIzxu0A0rOftRPBQnsfKRvDrsmO1wfIiHyG4i17TWF5EvvGftq1GhEjt"
+                                                    target="_blank"
+                                                    style="display: inline-block; color: #000; background-color:#eebc00; border:none;border-radius:100px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 13px; font-weight: bold; margin: 0; padding: 12px 40px; text-transform: capitalize"
+                                                    title="Click here to start survey">Donate</a> </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /donate -->
+
+
+
+                <!-- start of title info-->
+                <tr>
+                    <td class="one-column" mc:edit="title_info" mc:edit="title_left" style="margin-top:200px;">
+                        <table width="98%"
+                            style="border: 1px solid rgba(255, 255, 255, 0); margin: 0 auto 0px; background-color: #F7F7F9; padding: 30px 0 10px;">
+                            <tr>
+                                <td class="contents">
+                                    <h4
+                                        style="letter-spacing:2px; color: #eb0cba; margin: 10px auto 0; text-align: center; padding-bottom:8px; font-weight: 300; text-decoration: underline #31f1b7 3px; font-family: 'Montserrat', sans-serif; font-size: 20px;">
+                                        🅼🅸🅽🅳 🆂🅴🆃</h4>
+                                    <h2 style="text-align: center; color: #333333; margin-top: 5px;">
+                                        Our Mindset At COKI</h2>
+                                    <p
+                                        style="text-align: center; margin-top: 30px; font-size: 16px; font-weight: 300; padding: 0px 12px; line-height: 30px;">
+                                        Till all is gold is our mental approach to striving to achieve excellence in
+                                        all we do as an
+                                        organization.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /title info -->
+
+                <!-- info -->
+                <tr>
+                    <td class="two-column"
+                        style="width: 98%; display: block; margin: 0 auto 0; background-color: #F7F7F9; ">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table width="100%">
+                        <tr>
+                        <td width="50%" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="80%" align="center">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents" mc:edit="info_left">
+                                            <tr>
+                                                <td>
+                                                    <img style="max-width:280px; width: 100%;  margin: 0px 0 0; display: block;"
+                                                        src="https://media.discordapp.net/attachments/954175466758111272/987638827399131146/3.png"
+                                                        alt="" />
+                                                    <!-- <h3 style="text-align:center;">Data Literacy</h3>
+                                                    <p style="text-align:center;">there is an extremely low rate of
+                                                        data literacy</p> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text" style="text-align:left; line-height: 20px;">
+                                                    <h3>Critical pathway</h3>
+                                                    COKI will train teachers, students, and school administrators in
+                                                    the use of its
+                                                    integrated School System
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto; padding: 20px 0; ">
+                                                        <tr>
+                                                            <td style="font-family: sans-serif; font-size: 13px; vertical-align: top; border-radius: 0px; text-align: center;"
+                                                                valign="top" align="center"> <a href="https://cokintl.org/
+                                                                    target=" _blank"
+                                                                    style="display: inline-block; color: #fff; background-color:#530b72; border:none;border-radius:100px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 13px; font-weight: bold; margin: 0; padding: 12px 20px; text-transform: capitalize"
+                                                                    title="Learn More">Learn More</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="50%" valign="top">
+                        <![endif]-->
+                        <div class="column">
+                            <table width="80%" align="center">
+                                <tr>
+                                    <td class="inner">
+                                        <table class="contents" mc:edit="info_right">
+                                            <tr>
+                                                <td>
+                                                    <img style="max-width:280px; width: 100%; margin: 0px 0 0; display: block;"
+                                                        src="https://media.discordapp.net/attachments/954175466758111272/987638827604672583/4.png"
+                                                        alt="" />
+                                                    <!-- <h3 style="text-align:center;">Student Progress</h3>
+                                                    <p style="text-align:center;">education to most of the African
+                                                        children is not transparent</p> -->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text" style="text-align:left; line-height: 20px;">
+                                                    <h3>Critical pathway</h3>
+                                                    <p> COKI will train teachers, students, and school administrators in
+                                                        the use of its
+                                                        integrated School System
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto; padding: 20px 0; ">
+                                                        <tr>
+                                                            <td style="font-family: sans-serif; font-size: 13px; vertical-align: top; border-radius: 0px; text-align: center;"
+                                                                valign="top" align="center"> <a
+                                                                    href="https://cokintl.org/" target="_blank"
+                                                                    style="display: inline-block; color: #fff; background-color:#530b72; border:none;border-radius:100px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 13px; font-weight: bold; margin: 0; padding: 12px 20px; text-transform: capitalize"
+                                                                    title="Learn More">Learn More</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- /info-->
+
+                <!-- start of footer -->
+                <tr>
+                    <td class="one-column" mc:edit="footer">
+                        <table align="center" width="98%" style="background: rgb(29, 29, 29); padding: 30px 0;">
+                            <tr>
+                                <td>
+                                    <img style="width:100%; max-width:150px;  margin: 0 auto 20px; display: block;"
+                                        src="https://media.discordapp.net/attachments/954175466758111272/987638827176837130/logofooter.png"
+                                        alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner contents"
+                                    style="text-align: center;padding-top: 20px; padding-bottom: 20px;">
+                                    <a href="https://twitter.com/COKIUSA/"><img
+                                            src="https://media.discordapp.net/attachments/954175466758111272/987638828330283008/icon-fb.png"
+                                            width="25" alt=""></a>
+                                    <a href="https://www.facebook.com/Cokinternational/"><img
+                                            src="https://media.discordapp.net/attachments/954175466758111272/987638830062510120/icon-twitter.png"
+                                            width="25" alt=""></a>
+                                    <a href="https://www.instagram.com/"><img
+                                            src="https://media.discordapp.net/attachments/954175466758111272/987638829722796122/icon-insta.png"
+                                            width="25" alt=""></a>
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center; padding-top: 12px;">
+                                    <p style="color:white; font-size: 10px;">&copy; 2022 COKI. All Rights Reserved</p>
+                                    <p style="color:white;"> 103 Bibb Street, Louisa, VA 23093</p>
+                                    <a style="font-size: 10px; color:white" href="">Unsubscribe</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- /footer-->
+
+
+
+
+
+
+
+                <!-- /CONTENT -->
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+</body>
+
+</html>
