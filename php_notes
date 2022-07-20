@@ -27,3 +27,42 @@ echo $user2->name;
 echo "<br>";
 echo $user2->sayHello();
 echo "<br>";
+
+
+==============================
+Lesson 2 Constructor Class
+
+<?php
+
+class User
+{
+    public $name;
+    public $age;
+
+    //will always run when we create a new instance of the class, we can also pass in parameters 
+    // Runs when an object is created
+    public function __construct($name, $age)
+    {
+        echo 'Class ' . __CLASS__ . ' instantiated<br>';
+        $this->name = $name;
+        $this->age = $age;
+    }
+
+    public function sayHello()
+    {
+        return $this->name . "say hello";
+    }
+
+    // Called when no other references to a certain object
+    // Used for cleanup, closing connections, etc
+    public function __destruct()
+    {
+        echo 'destructor ran...';
+    }
+}
+
+
+$user1 = new User("brad", 38);
+
+echo $user1->name  . ' is ' . $user1->age;
+echo $user1->sayHello();
