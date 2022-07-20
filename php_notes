@@ -1,0 +1,29 @@
+PHP Lesson 1 Class 
+
+<?php
+//Define Class
+class User
+{
+    //properties (attribute)
+    public $name = "brad";
+    //Methods (functions) need this keyword to access proprties in class
+    public function sayHello()
+    {
+        return $this->name . " " . " says Hello";
+    }
+}
+
+//create object from class 
+$user1 = new User();
+echo $user1->name = "thomas";
+echo "<br>";
+echo $user1->sayHello();
+echo "<br>";
+
+//create second user 
+
+$user2 = new User();
+echo $user2->name;
+echo "<br>";
+echo $user2->sayHello();
+echo "<br>";
